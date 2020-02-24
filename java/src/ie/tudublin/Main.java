@@ -6,10 +6,14 @@ public class Main
     public void BugZapp()
 	{
 		String[] a = {"MAIN"};
-<<<<<<< HEAD
         processing.core.PApplet.runSketch( a, new BugZapp());
-=======
-        processing.core.PApplet.runSketch( a, new HelloProcessing());
+
+    }
+
+    public void helloArrays()
+    {
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Arrays());
     }
 
     public void loops()
@@ -28,12 +32,10 @@ public class Main
 	{
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new AirSeaBattle());
-<<<<<<< HEAD
->>>>>>> 128c1157624554f06e8e3f01c6aac100db7ed36e
 	}
-=======
-    }
->>>>>>> eb73adade4ee29c79cd5220fe94af6f2d6fec7c9
+
+
+
     
     public void dogsCats()
     {
@@ -43,14 +45,8 @@ public class Main
         // This is not polymorphism
         Cat topcat = new Cat("Topcat");
 
-<<<<<<< HEAD
         Main main = new Main();
-<<<<<<< HEAD
-		main.BugZapp();
-=======
-		main.loops();
->>>>>>> 128c1157624554f06e8e3f01c6aac100db7ed36e
-=======
+
         // This is polymorphism!
         Animal mino = new Cat("Mino");
         // A vitual method!
@@ -66,7 +62,6 @@ public class Main
 
         Animal a = new Cat("a");
         Animal b = new Cat("b");
->>>>>>> eb73adade4ee29c79cd5220fe94af6f2d6fec7c9
         
         System.out.println(a);
         System.out.println(b);
@@ -86,6 +81,6 @@ public class Main
     public static void main(String[] arg)
     {
         Main main = new Main();
-		main.loops();        
+		main.helloArrays();        
     }
 }

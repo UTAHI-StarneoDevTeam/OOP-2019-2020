@@ -84,7 +84,6 @@ public class Loops extends PApplet
 
 	public void draw()
 	{	
-<<<<<<< HEAD
 		background(0);
 		/*
 			line(10, 10, 100, 10);
@@ -109,19 +108,10 @@ public class Loops extends PApplet
 			i ++;
 		}
 		
-		for(int j = 0 ; j < 1-- ; j ++)
+		/*for(int j = 0 ; j < 1-- ; j ++)
 		{
 			
-		}
+		}*/
 		
-=======
-		background(0);		
-		colorMode(HSB);
-		//loops1();
-
-		loops2();
-
-		//loops3();
->>>>>>> eb73adade4ee29c79cd5220fe94af6f2d6fec7c9
 	}
 }
