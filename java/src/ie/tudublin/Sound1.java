@@ -28,7 +28,8 @@ public class Sound1 extends PApplet
 		background(0);		
 		stroke(255);
 		float cy = height / 2;
-		
+		float cx = width /2;
+		/*
 		for(int i = 0 ; i < ai.bufferSize() ; i ++)
 		{
 			stroke(
@@ -37,6 +38,12 @@ public class Sound1 extends PApplet
 				, 255
 			);
 			line(i, cy, i, cy + ai.left.get(i) * cy);
+		}
+		*/
+
+		for(int i = 0; i< ai.bufferSize(); i++)
+		{
+			circle(cx,cy,ai.left.get(i) * cy);
 		}
 	}
 }
