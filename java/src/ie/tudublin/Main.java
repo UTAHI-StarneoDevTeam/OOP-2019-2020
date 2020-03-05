@@ -95,6 +95,6 @@ public class Main
 
     public static void main(final String[] arg) {
         final Main main = new Main();
-		main.sound1();        
+		main.sound2();        
     }
 }

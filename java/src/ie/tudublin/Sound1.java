@@ -45,10 +45,6 @@ public class Sound1 extends PApplet
 		background(0);		
 		stroke(255);
 		float cy = height / 2;
-<<<<<<< HEAD
-		float cx = width /2;
-		/*
-=======
 		float sum = 0;
 		for(int i = 0 ; i < ai.bufferSize() ; i ++)
 		{
@@ -75,7 +71,6 @@ public class Sound1 extends PApplet
 
 
 		
->>>>>>> 9dae6c15e7dec9d5d6f4b208477af206ffa8c292
 		for(int i = 0 ; i < ai.bufferSize() ; i ++)
 		{
 			stroke(
@@ -85,14 +80,6 @@ public class Sound1 extends PApplet
 			);
 			line(i, cy, i, cy + ai.left.get(i) * cy);
 		}
-<<<<<<< HEAD
-		*/
-
-		for(int i = 0; i< ai.bufferSize(); i++)
-		{
-			circle(cx,cy,ai.left.get(i) * cy);
-		}
-=======
 		
 		circy += random(-20, 20);
 		lerpedcircley = lerp(lerpedcircley, circy, 0.1f);
@@ -108,6 +95,5 @@ public class Sound1 extends PApplet
 			line(i, 0, i, fft.getBand(i) * 100);
 		}
 		
->>>>>>> 9dae6c15e7dec9d5d6f4b208477af206ffa8c292
 	}
 }
