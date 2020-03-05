@@ -2,7 +2,16 @@ package ie.tudublin;
 
 public class Main
 {
+<<<<<<< HEAD
     
+=======
+
+    public void soundSynthesis()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new SoundSynthesis());
+    }
+>>>>>>> 666308a4cccc35b5bafed6c54435e12373b72889
     public void helloArrays()
 	{
 		final String[] a = { "MAIN" };
@@ -92,9 +101,10 @@ public class Main
         // a & b are object references
 
     }
-
-    public static void main(final String[] arg) {
-        final Main main = new Main();
-		main.sound2();        
+    
+    public static void main(String[] arg)
+    {
+        Main main = new Main();
+		main.soundSynthesis();        
     }
 }

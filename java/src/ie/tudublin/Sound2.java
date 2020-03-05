@@ -105,7 +105,7 @@ public class Sound2 extends PApplet
 		for(int i = 0 ; i < fft.specSize() ; i ++)
 		{
 			line(i, 0, i, fft.getBand(i) * 100);
-			if(fft.getBand(i) > fft.getBand(highestBin))
+			if (fft.getBand(i) > fft.getBand(highestBin))
 			{
 				highestBin = i;
 			}
@@ -113,12 +113,8 @@ public class Sound2 extends PApplet
 
 		float freq1 = fft.indexToFreq(highestBin);
 
-
-		for(int i = 0 ; i < freq1 ; i ++)
-		{
-			stroke(255);
-			text("FFT Freq: " + freq1, 100, 100);
-		}
+		fill(255);
+		text("FFT Freq: " + freq1, 100, 100);
 
 	}
 }
