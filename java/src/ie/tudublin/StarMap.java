@@ -44,6 +44,10 @@ public class StarMap extends PApplet
 
     public void draw()
     {
+        colorMode(HSB);
+        background(0);
+        fill(0,50,0);
+        line(50,50,75,75);
 
     }
 
